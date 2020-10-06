@@ -1,0 +1,26 @@
+[
+    {
+        "FirstName": "Parag",
+        "LastName": "Adhau",
+        "EmailId": "adhauparag@gmail.com",
+        "PhoneNo": "9604445258"
+    },
+    {
+        "FirstName": "Saurabh",
+        "LastName": "Dagwar",
+        "EmailId": "sdagwar@yahoo.com",
+        "PhoneNo": "7709588375"
+    },
+    {
+        "FirstName": "Nitin",
+        "LastName": "Makin",
+        "EmailId": "nmakin@gmail.com",
+        "PhoneNo": "7890765443"
+    },
+    {
+        "FirstName": "Souman",
+        "LastName": "Ghosh",
+        "EmailId": "soumeng23@gmail.com",
+        "PhoneNo": "9800771123"
+    }
+]

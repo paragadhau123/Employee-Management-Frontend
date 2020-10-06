@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>User Registration</title>
+  <link rel="stylesheet" href="../css/SignUp.css" />
+  <link rel="stylesheet" href="D:\parag\JavaScript\HTML\pages\Login.html" />
+  <script type="text/javascript" src="../JavaScript/validate.js"></script>
+</head>
+
+<body>
+  <div class="Registration-Form">
+    <form onsubmit="return validate()" action="../pages/Login.html">
+      <h1>User Registration Form</h1>
+      <p for="fname">First Name</p>
+      <input type="text" id="first-name" placeholder="Start with Capital and Minimum three letters" required>
+      <span id="firstnameerror"></span>
+      <p for="lname">Last Name</p>
+      <input type="text" id="last-name" placeholder="Start with Capital and Minimum three letters" required>
+      <span id="lastnameerror"></span>
+      <p for="email">Email</p>
+      <input type="text" id="email" placeholder="Email should be in standard format" required>
+      <span id="emailerror"></span>
+      <p for="phonenumber">Phone Number</p>
+      <input type="tel" id="phone-number" placeholder="Phone Number should be minimum ten digits" required>
+      <span id="phonenumerror"></span>
+      <p for="password">Password</p>
+      <input type="password" id="password" placeholder="Small,Capital Letters,Numbers,Speacial Characters" required>
+      <span id="passworderror"></span>
+      <br>
+      <div class="button">
+        <input type="submit" onclick="/pages/Login.html" class="button" value="Create Account">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

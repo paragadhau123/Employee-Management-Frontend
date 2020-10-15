@@ -2,8 +2,9 @@
 
 <head>
     <title>Employee Record</title>
-    <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/Dashboard.css">
     <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="../JavaScript/Dashboard.js"></script>
 </head>
 
 <body>
@@ -21,36 +22,6 @@
             <th>Delete</th>
         </tr>
     </table><br>
-    <script type="text/javascript">
-        $(document).ready(function () {
-
-            $.getJSON("../JSON/data.json",
-                function (data) {
-                    var emp = "";
-
-                    $.each(data, function (key, value) {
-
-                    
-                        emp += "<tr>";
-                        emp += "<td>" +
-                            value.FirstName + "</td>";
-                        emp += '<td>' +
-                            value.LastName + '</td>';
-                        emp += '<td>' +
-                            value.EmailId + '</td>';
-                        emp += '<td>' +
-                            value.PhoneNo + '</td>';
-
-                            emp += '<td><button>EDIT</button></td>';
-                            emp += '<td><button>DELETE</button></td>';
-
-                        "</tr>";
-                    });
-                  
-                    $('#table').append(emp);
-                });
-        }); 
-    </script>
 </body>
 
 </html>

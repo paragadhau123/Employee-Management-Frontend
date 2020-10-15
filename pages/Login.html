@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/Login.css">
     <link rel="stylesheet" href="../pages/Dashboard.html" />
     <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="../JavaScript/Login.js"></script>
 </head>
 
 <body>
@@ -13,49 +14,18 @@
         <h1>Login Here</h1>
         <form onclick=" return login()">
             <p for="username">Username</p>
-            <input type="text" Id="username" placeholder="Enter Username" required>
+            <input type="text" Id="username" placeholder="Enter Username">
             <span id="usererror"></span>
             <p for="password">Password</p>
-            <input type="password" Id="password" placeholder="Enter Password" required>
+            <input type="password" Id="password" placeholder="Enter Password">
             <span id="passworderror"></span>
             <div class="button">
-                <input type="button"class="button" value="Log In">
+                <input type="button" class="button" value="Log In">
             </div>
             <a href="../pages/SignUp.html">Click here to create new account</a>
         </form>
     </div>
-   
+
 </body>
 
-<script type="text/javascript">
-    login = () => {
-       
-        $(document).ready(function () {
-        $.getJSON("../JSON/users.json", (data) => {
-        let username = document.getElementById('username').value;
-        let password = document.getElementById('password').value;
-        
-         $.each(data, (key, value) => {
-            if(value.username == username){
-                if(value.password == password){
-                   document.getElementById('passworderror').innerHTML = "Successfull";
-                window.location='./dashboard.html'
-                }
-                else{
-                   document.getElementById('passworderror').innerHTML = "Invalid Password";
-                    return false;
-                }
-            }
-            else{
-              document.getElementById('usererror').innerHTML = "Invalid Username";
-                return false
-            }
-         })
-       
-    })
-    
-        })
-    }
-
-</script>
 </html>
